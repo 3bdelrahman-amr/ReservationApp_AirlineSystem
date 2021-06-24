@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6667E141-6E85-4E31-B60B-BB14F80586BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFlightCrew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFlightCrew.Designer.cs">
+      <DependentUpon>AddFlightCrew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFlightF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFlightF.Designer.cs">
+      <DependentUpon>AddFlightF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPlaneF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPlaneF.Designer.cs">
+      <DependentUpon>AddPlaneF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAirPortF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAirPortF.Designer.cs">
+      <DependentUpon>AddAirPortF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminF.Designer.cs">
+      <DependentUpon>AdminF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ban_UnbamClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ban_UnbamClient.Designer.cs">
+      <DependentUpon>Ban_UnbamClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="DBManager.cs" />
+    <Compile Include="EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProfile.designer.cs">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightCrew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightCrew.Designer.cs">
+      <DependentUpon>FlightCrew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeClient.designer.cs">
+      <DependentUpon>HomeClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginClient.designer.cs">
+      <DependentUpon>LoginClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCrew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginCrew.Designer.cs">
+      <DependentUpon>LoginCrew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainF.Designer.cs">
+      <DependentUpon>MainF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify_Delet_flight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify_Delet_flight.Designer.cs">
+      <DependentUpon>Modify_Delet_flight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignupPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignupPage.Designer.cs">
+      <DependentUpon>SignupPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProc.cs" />
+    <Compile Include="UpdatePlaneStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePlaneStatus.Designer.cs">
+      <DependentUpon>UpdatePlaneStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VAirport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VAirport.Designer.cs">
+      <DependentUpon>VAirport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validate.cs" />
+    <Compile Include="VClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VClients.Designer.cs">
+      <DependentUpon>VClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VFlights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VFlights.Designer.cs">
+      <DependentUpon>VFlights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReview.Designer.cs">
+      <DependentUpon>ViewReview.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFlightCrew.resx">
+      <DependentUpon>AddFlightCrew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFlightF.resx">
+      <DependentUpon>AddFlightF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPlaneF.resx">
+      <DependentUpon>AddPlaneF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAirPortF.resx">
+      <DependentUpon>AddAirPortF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminF.resx">
+      <DependentUpon>AdminF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ban_UnbamClient.resx">
+      <DependentUpon>Ban_UnbamClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProfile.resx">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightCrew.resx">
+      <DependentUpon>FlightCrew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeClient.resx">
+      <DependentUpon>HomeClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginClient.resx">
+      <DependentUpon>LoginClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginCrew.resx">
+      <DependentUpon>LoginCrew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainF.resx">
+      <DependentUpon>MainF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify_Delet_flight.resx">
+      <DependentUpon>Modify_Delet_flight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SignupPage.resx">
+      <DependentUpon>SignupPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePlaneStatus.resx">
+      <DependentUpon>UpdatePlaneStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VAirport.resx">
+      <DependentUpon>VAirport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VClients.resx">
+      <DependentUpon>VClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VFlights.resx">
+      <DependentUpon>VFlights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReview.resx">
+      <DependentUpon>ViewReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
